@@ -50,7 +50,7 @@ export function MultiCheckboxWidget({
           />
         ))}
       </FormGroup>
-      {(error ?? descriptor.helperText) !== undefined ? (
+      {error !== undefined ? (
         <FormHelperText>{error ?? descriptor.helperText}</FormHelperText>
       ) : null}
     </FormControl>

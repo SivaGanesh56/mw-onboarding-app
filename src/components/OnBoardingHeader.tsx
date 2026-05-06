@@ -1,4 +1,5 @@
-import { Alert, Box, Button, CssBaseline, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button, CssBaseline, Stack, Typography } from '@mui/material'; // REVIEW: stale imports, setup husky rule to catch it before commit
+// and proper linting in place in the editor (leverage LSP for llm's to not produce non linted code)
 
 
 export default function OnBoardingHeader() {

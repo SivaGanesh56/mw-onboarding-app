@@ -24,7 +24,7 @@ export function NumberWidget({ descriptor, value, error, onChange, onBlur, disab
       onChange={handleChange}
       onBlur={onBlur}
       error={Boolean(error)}
-      helperText={error ?? descriptor.helperText}
+      helperText={error}
       disabled={disabled}
       slotProps={{
         htmlInput: {

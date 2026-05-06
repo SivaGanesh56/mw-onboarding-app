@@ -19,7 +19,7 @@ export function TextWidget({ descriptor, value, error, onChange, onBlur, disable
       onChange={handleChange}
       onBlur={onBlur}
       error={Boolean(error)}
-      helperText={error ?? descriptor.helperText}
+      helperText={error}
       disabled={disabled}
       slotProps={{
         htmlInput: {

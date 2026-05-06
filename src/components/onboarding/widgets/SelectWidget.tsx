@@ -33,7 +33,7 @@ export function SelectWidget({ descriptor, value, error, onChange, onBlur, disab
           </MenuItem>
         ))}
       </Select>
-      {(error ?? descriptor.helperText) !== undefined ? (
+      {error ? (
         <FormHelperText>{error ?? descriptor.helperText}</FormHelperText>
       ) : null}
     </FormControl>

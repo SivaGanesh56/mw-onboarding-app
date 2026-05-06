@@ -95,8 +95,8 @@ export function TagsWidget({
         </Box>
       ) : null}
 
-      {(error ?? descriptor.helperText) !== undefined ? (
-        <FormHelperText sx={{ mt: 1 }}>{error ?? descriptor.helperText}</FormHelperText>
+      {error !== undefined ? (
+        <FormHelperText sx={{ mt: 1 }}>{error}</FormHelperText>
       ) : null}
     </FormControl>
   );

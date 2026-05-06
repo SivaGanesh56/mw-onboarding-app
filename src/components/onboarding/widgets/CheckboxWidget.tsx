@@ -16,7 +16,7 @@ export function CheckboxWidget({ descriptor, value, error, onChange, onBlur, dis
         }
         label={descriptor.label}
       />
-      {(error ?? descriptor.helperText) !== undefined ? (
+      {error !== undefined ? (
         <FormHelperText>{error ?? descriptor.helperText}</FormHelperText>
       ) : null}
     </FormControl>
